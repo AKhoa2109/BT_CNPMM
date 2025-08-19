@@ -6,7 +6,8 @@
 }
 
 .logo {
-  height: 10em;
+  height: 400px;
+  width: 250px;
   padding: 1em;
   will-change: filter;
   transition: filter 300ms;
@@ -33,10 +34,7 @@
   }
 }
 
-.card {
-  padding: 1em;
+.card p{
+  font-size: large;
 }
 
-.read-the-docs {
-  color: #888;
-}
