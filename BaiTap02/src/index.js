@@ -3,6 +3,7 @@ import bodyParser from "body-parser"; // nạp body-parser lấy tham số từ 
 import viewEngine from "./config/viewEngine"; // nạp viewEngine
 import initWebRoutes from "./route/web"; // nạp file web từ Route
 import connectDB from "./config/configdb";
+const path = require('path');
 require('dotenv').config(); // gọi hàm config của dotenv để chạy lệnh process.env.PORT
 
 let app = express();
@@ -10,6 +11,7 @@ let app = express();
 // config app
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('src/views'))
 
 viewEngine(app);
 initWebRoutes(app);
