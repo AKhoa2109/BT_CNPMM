@@ -3,7 +3,6 @@ import CRUDService from '../services/CRUDService'; //import service
 
 //hàm getHomePage
 let getHomePage = async (req, res) => {
-    //return res.send('Nguyễn Hữu Trung');
     try {
         let data = await db.User.findAll(); //lấy dữ liệu từ models/index
         console.log('....................');
