@@ -11,3 +11,8 @@
 - **Tên:** Bài tập 02  
 - **Ngày:** 20/08/2025  
 - **Nội dung:** CRUD với ExpressJS  
+
+### BaiTap03
+- **Tên:** Bài tập 03  
+- **Ngày:** 26/08/2025  
+- **Nội dung:** CRUD với ExpressJS sử dụng Typescript
