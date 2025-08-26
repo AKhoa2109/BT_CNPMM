@@ -17,13 +17,9 @@ let createNewUser = async (data) => { //hàm tạo user với tham số data
                 gender: data.gender === '1' ? true : false,
                 roleId: data.roleId
             })
-
             resolve('OK create a new user successfull');
-            // console.log('data from service');
-            // console.log(data) //log dữ liệu từ biến data
-            // console.log(hashPasswordFromBcrypt);
-
-        } catch (e) {
+        } 
+        catch (e) {
             reject(e);
         }
     })
@@ -34,7 +30,8 @@ let hashUserPassword = (password) => {
         try {
             let hashPassword = await bcrypt.hashSync("B4c0/\\", salt);
             resolve(hashPassword);
-        } catch (e) {
+        } 
+        catch (e) {
             reject(e);
         }
     })
@@ -48,7 +45,8 @@ let getAllUser = () => {
                 raw: true, //hiển dữ liệu gốc
             });
             resolve(users); //hàm trả về kết quả
-        } catch (e) {
+        } 
+        catch (e) {
             reject(e)
         }
     })
@@ -70,7 +68,8 @@ let getUserInfoById = (userId) => {
                 resolve([]); //hàm trả về kết quả rỗng
             }
 
-        } catch (e) {
+        } 
+        catch (e) {
             reject(e)
         }
     })
@@ -83,7 +82,8 @@ let updateUser = (data) => {
             let user = await db.User.findOne({
                 where: { id: data.id } //query điều kiện cho tham số
             });
-            if (user) {
+            if (user) 
+            {
                 user.firstName = data.firstName;
                 user.lastName = data.lastName;
                 user.address = data.address;
@@ -91,10 +91,13 @@ let updateUser = (data) => {
                 //lấy danh sách user
                 let allUsers = await db.User.findAll();
                 resolve(allUsers);
-            } else {
+            } 
+            else 
+            {
                 resolve(); //hàm trả về kết quả rỗng
             }
-        } catch (e) {
+        } 
+        catch (e) {
             reject(e);
         }
     });
@@ -111,7 +114,8 @@ let deleteUserById = (userId) => {
                 user.destroy();
             }
             resolve(); //là return
-        } catch (e) {
+        } 
+        catch (e) {
             reject(e);
         }
     });

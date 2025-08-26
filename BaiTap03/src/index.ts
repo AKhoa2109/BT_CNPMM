@@ -8,7 +8,7 @@ import dotenv from "dotenv";
 
 dotenv.config(); // gọi hàm config của dotenv để chạy lệnh process.env.PORT
 
-const app = express();
+const app: Application = express();
 
 // config app
 app.use(bodyParser.json());
@@ -23,7 +23,7 @@ initWebRoutes(app);
 connectDB();
 
 // lấy port từ env hoặc default 6969
-const port = Number(process.env.PORT) || 6969;
+const port: number = Number(process.env.PORT) || 6969;
 
 // chạy server
 app.listen(port, () => {

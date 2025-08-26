@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách người dùng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Danh sách người dùng</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (datalist && datalist.length > 0) { %>
+                <% for (let i = 0; i < datalist.length; i++) { %>
+                    <tr>
+                        <td><%= datalist[i].email %></td>
+                        <td><%= datalist[i].firstName %></td>
+                        <td><%= datalist[i].lastName %></td>
+                        <td><%= datalist[i].address %></td>
+                        <td>
+                            <a href="/edit-crud?id=<%= datalist[i].id %>">Edit</a> | 
+                            <a href="/delete-crud?id=<%= datalist[i].id %>" onclick="return confirm('Bạn có chắc muốn xóa người này không?')">Delete</a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } else { %>
+                <tr>
+                    <td colspan="5" style="text-align: center;">Không có dữ liệu</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>
