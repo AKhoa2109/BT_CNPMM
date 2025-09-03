@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "66d5f3c40000000000000001"
+  },
+  "name": "Thời trang",
+  "description": "Quần áo, giày dép, phụ kiện",
+  "image": "https://baabrand.com/wp-content/uploads/2018/12/icon-thiet-ke-linh-vuc-logo-thuong-hieu-thoi-trang-my-pham-lam-dep-spa-baa-brand-1-400x400.png"
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000000002"
+  },
+  "name": "Điện thoại",
+  "description": "Các loại điện thoại di động và phụ kiện",
+  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-plus-256gb_2.png"
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000000003"
+  },
+  "name": "Đồ gia dụng",
+  "description": "Thiết bị điện, dụng cụ nhà bếp",
+  "image": "https://kalite.vn/wp-content/uploads/2024/11/kitchenware.png"
+}]

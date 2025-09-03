@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "68ae6e731bdd834496edf85f"
+  },
+  "name": "Anh Khoa",
+  "email": "anhkhoaxn11@gmail.com",
+  "password": "$2b$10$zdX9pmXJteHX.PofbL0.CONPmrmP4Y5uG4AlGOmpTR.NlkrdXQmvy",
+  "role": "User",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b79dddcb15385fc4333dd1"
+  },
+  "name": "AnhKhoa",
+  "email": "anhkhoadevtool2109@gmail.com",
+  "password": "$2b$10$whg/T8QRr3lI1/.gpJbaPeV9r78aoZ09/6YJKUd7Aa5Q1mq7BAXiS",
+  "role": "User",
+  "__v": 0
+}]
