@@ -52,6 +52,13 @@ const HomePage = () => {
                 title={cat.name}
                 style={{ borderRadius: 8 }}
                 onClick={() => handleClickCategory(cat._id)}
+                cover={
+                <img
+                  style={{ height: 180, objectFit: "contain" }}
+                  alt={cat.name}
+                  src={cat.image}
+                />
+              }
               >
                 <p>{cat.description}</p>
               </Card>

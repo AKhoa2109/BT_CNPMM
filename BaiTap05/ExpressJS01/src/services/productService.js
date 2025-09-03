@@ -1,6 +1,6 @@
 import Product from "../models/product.js";
 
-export const getProducts = async (categoryId, page=1,limit=3) => {
+export const getProducts = async (categoryId, page,limit=3) => {
     try{
         const filter = categoryId ? { category: categoryId } : {};
         const skip = (page - 1) * limit;
