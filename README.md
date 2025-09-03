@@ -28,3 +28,14 @@
 ```
 - **Nội dung:** Fullstack với ExpressJS, ReactJS
 ---
+### BaiTap05
+- **Tên:** Bài tập 05  
+- **Ngày:** 03/09/2025  
+- **Folder:**
+```bash
+    BaiTap05/
+        ├── ExpressJS01/  
+        ├── ReactJS01/  
+```
+- **Nội dung:** Lazing loading, paging
+---
