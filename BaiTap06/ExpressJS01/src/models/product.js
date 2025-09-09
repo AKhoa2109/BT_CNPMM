@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import Category from "./category.js";
 import {indexProductToES, deleteProductFromES} from '../services/esSyncProduct.js';
 const productSchema = new mongoose.Schema({
     name: { type: String, required: true },

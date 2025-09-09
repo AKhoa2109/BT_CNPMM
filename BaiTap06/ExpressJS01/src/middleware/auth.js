@@ -3,7 +3,7 @@ dotenv.config();
 import jwt from 'jsonwebtoken';
 
 const auth = (req, res, next) => {
-    const white_lists = ["/", "/register", "/login"];
+    const white_lists = ["/", "/register", "/login","/search/**","/categories","/products/by-category/:id"];
     if (white_lists.find(item => '/v1/api' + item === req.originalUrl)) {
         next();
     } else {

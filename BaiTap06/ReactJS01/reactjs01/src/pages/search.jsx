@@ -28,6 +28,8 @@ const SearchPage = () => {
     sortOrder: "desc",
   });
 
+  console.log(results);
+
   // load danh mục
   useEffect(() => {
     getAllCategoriesApi().then((res) => {
@@ -37,39 +39,63 @@ const SearchPage = () => {
 
   // hàm gọi search API
   const doSearch = async ({
-    qText = q,
-    pageNum = page,
-    limitNum = limit,
-    filtersObj = filters,
-  } = {}) => {
-    setLoading(true);
-    try {
-      const params = {
-        q: qText,
-        category: filtersObj.category,
-        page: pageNum,
-        limit: limitNum,
-        priceMin: filtersObj.priceRange ? filtersObj.priceRange[0] : undefined,
-        priceMax: filtersObj.priceRange ? filtersObj.priceRange[1] : undefined,
-        sortField: filtersObj.sortField,
-        sortOrder: filtersObj.sortOrder,
-      };
+  qText = q,
+  pageNum = page,
+  limitNum = limit,
+  filtersObj = filters,
+} = {}) => {
+  setLoading(true);
+  try {
+    const params = {
+      q: qText,
+      category: filtersObj.category,
+      page: pageNum,
+      limit: limitNum,
+      priceMin: filtersObj.priceRange ? filtersObj.priceRange[0] : undefined,
+      priceMax: filtersObj.priceRange ? filtersObj.priceRange[1] : undefined,
+      sortField: filtersObj.sortField,
+      sortOrder: filtersObj.sortOrder,
+    };
 
-      const res = await searchProductsApi(params);
-      if (res && res.data && res.data.EC === 0) {
-        const data = res.data.data;
-        console.log("Products:", data.products);
-        setResults(data.products || []);
-        setTotal(data.total || 0);
-        setPage(data.page || 1);
-        setLimit(limitNum);
-      }
-    } catch (err) {
-      console.error("Search error:", err);
-    } finally {
-      setLoading(false);
+    console.log("Calling search API with params:", params);
+
+    const res = await searchProductsApi(params);
+
+    // LOG toàn bộ response để debug interceptor/baseURL
+    console.log("Full axios response:", res);
+    console.log("res.data:", res?.data);
+
+    // Chuẩn hoá payload cho các dạng response khác nhau:
+    // - res.data = { EC:0, data: { products: [...] } }  -> payload = res.data.data
+    // - res.data = { products: [...], total: x }        -> payload = res.data
+    // - axios interceptor có thể đã unwrap -> res = payload
+    let payload = null;
+    if (!res) payload = null;
+    else if (res.data && res.data.data) payload = res.data.data; // case backend with EC/data
+    else if (res.data && (res.data.products || res.data.total != null)) payload = res.data; // direct
+    else if (res.products || res.total != null) payload = res; // unlikely
+    else payload = null;
+
+    console.log("Normalized payload:", payload);
+
+    if (payload) {
+      setResults(payload.products || []);
+      setTotal(payload.total || 0);
+      setPage(payload.page || pageNum || 1);
+      setLimit(limitNum);
+    } else {
+      console.warn("Search API returned unexpected shape. Full res.data:", res?.data);
+      setResults([]);
+      setTotal(0);
     }
-  };
+  } catch (err) {
+    console.error("Search error:", err);
+    setResults([]);
+    setTotal(0);
+  } finally {
+    setLoading(false);
+  }
+};
 
   // khi vào trang lần đầu nếu có q từ URL → search
   useEffect(() => {
@@ -105,9 +131,9 @@ const SearchPage = () => {
   };
 
   return (
+    
     <div style={{ padding: 20 }}>
       <Title level={3}>Tìm kiếm sản phẩm</Title>
-
       <Row gutter={[16, 16]}>
         {/* Sidebar filter */}
         <Col xs={24} sm={24} md={6}>
@@ -196,7 +222,7 @@ const SearchPage = () => {
             <>
               <Row gutter={[16, 16]}>
                 {results.map((p) => (
-                    <Col key={p.id} xs={24} sm={12} md={8}>
+                    <Col key={p.id || p._id} xs={24} sm={12} md={8}>
                         <Card
                         hoverable
                         cover={
@@ -213,7 +239,10 @@ const SearchPage = () => {
                             <>
                                 <div>Giá: {p.price?.toLocaleString()} VND</div>
                                 {p.categoryName && <div>Danh mục: {p.categoryName}</div>}
-                                <div>Điểm tìm kiếm: {p.score?.toFixed(2)}</div>
+                                <div style={{ marginTop: 8 }}>{p.description}</div>
+                                {p.discount > 0 && <div>Giảm giá: {p.discount}%</div>}
+                                {p.isOnSale && <div style={{ color: "red" }}>Đang khuyến mãi</div>}
+                                <div>Lượt xem: {p.views}</div>
                             </>
                             }
                         />

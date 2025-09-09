@@ -38,7 +38,7 @@ export const searchProductsController = async (req, res) => {
     };
 
     const data = await searchProducts({ q, filters, sort, page, limit });
-    console.log(data);
+    console.log("searchProductsController result:", { q, filters, sort, page, limit, total: data?.total, productsCount: data?.products?.length });
 
     return res.status(200).json({ EC: 0, data });
   } catch (err) {
