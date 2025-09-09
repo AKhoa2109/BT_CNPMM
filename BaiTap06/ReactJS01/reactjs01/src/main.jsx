@@ -1,0 +1,61 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './styles/global.css';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import RegisterPage from "./pages/register.jsx";
+import UserPage from "./pages/user.jsx";
+import HomePage from "./pages/home.jsx";
+import LoginPage from "./pages/login.jsx";
+import ProductPage from "./pages/product.jsx"; 
+import { AuthWrapper } from "./components/context/auth.context.jsx";
+import SearchPage from './pages/search.jsx';
+
+const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "user",
+        element: <UserPage />,
+      },
+      {
+        path: "products",
+        element: <ProductPage />,
+        children: [
+          {
+            path: "by-category/:id",
+            element: <ProductPage />,
+          }
+        ],
+      },
+      {
+        path:"search",
+        element: <SearchPage/>
+      }
+    ],
+  },
+  {
+    path: "register",
+    element: <RegisterPage />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <AuthWrapper>
+      <RouterProvider router={router} />
+    </AuthWrapper>
+);

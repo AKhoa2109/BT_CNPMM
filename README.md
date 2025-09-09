@@ -39,3 +39,15 @@
 ```
 - **Nội dung:** Lazing loading, paging
 ---
+### BaiTap06
+- **Tên:** Bài tập 06  
+- **Ngày:** 09/09/2025  
+- **Folder:**
+```bash
+    BaiTap06/
+        ├── ExpressJS01/  
+        ├── ReactJS01/  
+```
+- **Nội dung:** Tìm kiếm sản phẩm (ElasticSearch) và lọc với nhiều điều kiện (theo danh mục, theo giá, theo khuyến mãi, theo lượt xem,...)
+- **Lưu ý:** Chạy docker-compose.yml trong EXPRESSJS01.
+---

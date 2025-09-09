@@ -1,0 +1,432 @@
+[{
+  "_id": {
+    "$oid": "68b79d69cc40f0fcbac8ff82"
+  },
+  "name": "Áo thun nam basic",
+  "price": 150000,
+  "image": "https://product.hstatic.net/200000325151/product/ao_thun_-_oversize_-_2405051_e6a42ac4e0b24abbbedb21d7e55e8789_master.png",
+  "description": "Áo thun cotton thoáng mát",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b79d69cc40f0fcbac8ff83"
+  },
+  "name": "Giày sneaker nữ",
+  "price": 650000,
+  "image": "https://bizweb.dktcdn.net/100/301/479/products/giay-sneaker-nu-hottrend-2021-co-thap-cao-cap-10.jpg?v=1635999955777",
+  "description": "Giày sneaker nữ phong cách trẻ trung",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b79d69cc40f0fcbac8ff84"
+  },
+  "name": "iPhone 15 Pro",
+  "price": 28990000,
+  "image": "https://halomobile.vn/wp-content/uploads/2023/09/iphone-15-pro-xanh-halo.png",
+  "description": "Điện thoại iPhone 15 Pro mới nhất",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b79d69cc40f0fcbac8ff85"
+  },
+  "name": "Ốp lưng iPhone",
+  "price": 150000,
+  "image": "https://lucas.vn/wp-content/uploads/2023/09/Op-Lung-iPhone-15-Series-WIWU-Magsafe-Mat-Lung-Nham-Chong-Van-Tay-8.png",
+  "description": "Ốp lưng silicon dẻo trong suốt",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b79d69cc40f0fcbac8ff86"
+  },
+  "name": "Nồi chiên không dầu",
+  "price": 1800000,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsx5PFRwX4GxYN0_va6v1KOft2Yd3aSQoBw&s",
+  "description": "Nồi chiên không dầu dung tích 5L",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b79d69cc40f0fcbac8ff87"
+  },
+  "name": "Máy hút bụi mini",
+  "price": 950000,
+  "image": "https://www.easyr.vn/cdn/shop/files/may-hut-bui-mc05-khong-day-mini-893003.png?v=1712829850",
+  "description": "Máy hút bụi mini cầm tay tiện lợi",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001001"
+  },
+  "name": "Áo sơ mi nam công sở slimfit",
+  "price": 320000,
+  "image": "https://example.com/images/ao-so-mi-nam-slimfit.jpg",
+  "description": "Áo sơ mi cotton chống nhăn, form slimfit phù hợp văn phòng",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001002"
+  },
+  "name": "Váy maxi hoa nhí nữ",
+  "price": 450000,
+  "image": "https://example.com/images/vay-maxi-hoa-nhi.jpg",
+  "description": "Váy maxi dập ly, chất liệu voan mềm, họa tiết hoa nhỏ",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001003"
+  },
+  "name": "Quần jean nam rách gối",
+  "price": 390000,
+  "image": "https://example.com/images/quan-jean-nam-rach.jpg",
+  "description": "Quần jean cotton co giãn nhẹ, phong cách trẻ trung",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001004"
+  },
+  "name": "Áo khoác bomber nữ",
+  "price": 520000,
+  "image": "https://example.com/images/ao-khoac-bomber.jpg",
+  "description": "Áo khoác bomber phối viền, có túi kéo, thích hợp mùa thu",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001005"
+  },
+  "name": "Áo len mỏng nữ cổ tim",
+  "price": 280000,
+  "image": "https://example.com/images/ao-len-cotim.jpg",
+  "description": "Áo len mỏng mềm mại, mặc ấm nhưng không dày, dễ phối đồ",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001006"
+  },
+  "name": "Bộ đồ thể thao nam 2 món",
+  "price": 360000,
+  "image": "https://example.com/images/bo-do-the-thao-nam.jpg",
+  "description": "Bộ thể thao thun lạnh thoáng khí, thích hợp chạy bộ và gym",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001007"
+  },
+  "name": "Dép lê nam quai ngang",
+  "price": 180000,
+  "image": "https://example.com/images/dep-le-nam.jpg",
+  "description": "Dép lê êm chân, đế chống trượt, dùng đi biển hoặc đi chơi",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001008"
+  },
+  "name": "Túi xách nữ mini da PU",
+  "price": 420000,
+  "image": "https://example.com/images/tui-xach-nu-mini.jpg",
+  "description": "Túi xách quai chéo, da PU cao cấp, ngăn đựng tiện lợi",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001009"
+  },
+  "name": "Mũ lưỡi trai unisex",
+  "price": 150000,
+  "image": "https://example.com/images/mu-luoi-trai.jpg",
+  "description": "Mũ lưỡi trai cotton, logo thêu, phù hợp đi dạo và thể thao",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000100a"
+  },
+  "name": "Khăn choàng lụa họa tiết",
+  "price": 260000,
+  "image": "https://example.com/images/khăn-choang-lua.jpg",
+  "description": "Khăn choàng lụa mềm, kích thước lớn, họa tiết sang trọng",
+  "category": {
+    "$oid": "66d5f3c40000000000000001"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000100b"
+  },
+  "name": "Samsung Galaxy S24 (8GB/256GB)",
+  "price": 18990000,
+  "image": "https://example.com/images/galaxy-s24.jpg",
+  "description": "Smartphone màn hình 6.2\", camera chất lượng, hiệu năng mạnh",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000100c"
+  },
+  "name": "Xiaomi Redmi Note 13 Pro",
+  "price": 6990000,
+  "image": "https://example.com/images/redmi-note-13-pro.jpg",
+  "description": "Điện thoại hiệu năng tốt phân khúc tầm trung, pin lớn",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000100d"
+  },
+  "name": "Samsung Galaxy A15 (RAM 6GB)",
+  "price": 4990000,
+  "image": "https://example.com/images/galaxy-a15.jpg",
+  "description": "Điện thoại phổ thông, pin trâu, giá hợp lý",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000100e"
+  },
+  "name": "Sạc nhanh PD 65W - Cổng Type-C",
+  "price": 420000,
+  "image": "https://example.com/images/sac-pd-65w.jpg",
+  "description": "Bộ sạc nhanh PD 65W, tương thích laptop & smartphone",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000100f"
+  },
+  "name": "Tai nghe bluetooth in-ear chống ồn",
+  "price": 750000,
+  "image": "https://example.com/images/tai-nghe-bluetooth.jpg",
+  "description": "Tai nghe true wireless, chống ồn chủ động, pin lâu",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001010"
+  },
+  "name": "Powerbank 20000mAh Quick Charge",
+  "price": 490000,
+  "image": "https://example.com/images/powerbank-20000.jpg",
+  "description": "Pin sạc dự phòng 20000mAh, hỗ trợ QC & PD, 2 cổng xuất",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001011"
+  },
+  "name": "Cáp Type-C bện dù 2m",
+  "price": 120000,
+  "image": "https://example.com/images/cap-typec-2m.jpg",
+  "description": "Cáp Type-C chịu lực, sạc nhanh, truyền dữ liệu ổn định",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001012"
+  },
+  "name": "Miếng dán cường lực full màn 5D",
+  "price": 80000,
+  "image": "https://example.com/images/mieng-dan-5d.jpg",
+  "description": "Miếng dán kính cường lực phủ toàn màn hình, chống xước",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001013"
+  },
+  "name": "Vivo Y100 (8GB/128GB)",
+  "price": 5990000,
+  "image": "https://example.com/images/vivo-y100.jpg",
+  "description": "Điện thoại thiết kế mảnh, camera selfie tốt, pin ổn",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001014"
+  },
+  "name": "Thẻ nhớ MicroSD 128GB UHS-I",
+  "price": 290000,
+  "image": "https://example.com/images/thẻ-nho-128gb.jpg",
+  "description": "Thẻ nhớ tốc độ cao UHS-I, phù hợp lưu trữ ảnh và video",
+  "category": {
+    "$oid": "66d5f3c40000000000000002"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001015"
+  },
+  "name": "Bếp từ đôi 2000W",
+  "price": 2890000,
+  "image": "https://example.com/images/bep-tu-doi.jpg",
+  "description": "Bếp từ đôi, bảng điều khiển cảm ứng, an toàn và tiết kiệm",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001016"
+  },
+  "name": "Máy giặt cửa trên 7kg",
+  "price": 4990000,
+  "image": "https://example.com/images/may-giat-7kg.jpg",
+  "description": "Máy giặt cửa trên tiết kiệm điện, nhiều chế độ giặt",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001017"
+  },
+  "name": "Lò vi sóng 25L",
+  "price": 1790000,
+  "image": "https://example.com/images/lo-vi-song-25l.jpg",
+  "description": "Lò vi sóng đa chức năng, hẹn giờ, rã đông nhanh",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001018"
+  },
+  "name": "Bình đun siêu tốc 1.7L",
+  "price": 330000,
+  "image": "https://example.com/images/binh-dun-sieu-toc.jpg",
+  "description": "Bình đun inox, dung tích 1.7L, tự ngắt an toàn khi sôi",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c40000000000001019"
+  },
+  "name": "Bộ nồi inox 5 món",
+  "price": 1250000,
+  "image": "https://example.com/images/bo-noi-inox-5mon.jpg",
+  "description": "Bộ nồi inox 304, đáy từ, phù hợp dùng bếp từ và gas",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000101a"
+  },
+  "name": "Máy xay sinh tố 2L công suất 800W",
+  "price": 950000,
+  "image": "https://example.com/images/may-xay-sinh-to.jpg",
+  "description": "Máy xay công suất cao, cối thủy tinh dung tích 2L, dễ vệ sinh",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000101b"
+  },
+  "name": "Quạt cây 3 tốc độ đứng",
+  "price": 790000,
+  "image": "https://example.com/images/quat-cay.jpg",
+  "description": "Quạt cây điều chỉnh độ cao, 3 mức gió, an toàn cho gia đình",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000101c"
+  },
+  "name": "Đèn đọc sách LED kẹp bàn",
+  "price": 240000,
+  "image": "https://example.com/images/den-doc-sach-led.jpg",
+  "description": "Đèn LED ánh sáng dịu, kẹp cố định, tiết kiệm điện",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000101d"
+  },
+  "name": "Máy lọc không khí phòng nhỏ",
+  "price": 2190000,
+  "image": "https://example.com/images/may-loc-khong-khi.jpg",
+  "description": "Máy lọc HEPA cho phòng 20m², loại bỏ bụi và mùi",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+},
+{
+  "_id": {
+    "$oid": "66d5f3c4000000000000101e"
+  },
+  "name": "Bộ chén đĩa sứ 12 chiếc",
+  "price": 680000,
+  "image": "https://example.com/images/bo-chen-dia-12.jpg",
+  "description": "Bộ chén đĩa sứ thanh lịch, chống mẻ, thích hợp gia đình",
+  "category": {
+    "$oid": "66d5f3c40000000000000003"
+  }
+}]
