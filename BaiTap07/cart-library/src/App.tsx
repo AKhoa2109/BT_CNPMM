@@ -10,21 +10,21 @@ function App() {
   const sampleProducts = [
     {
       id: '1',
-      name: 'Product 1',
-      price: 19.99,
-      image: 'https://via.placeholder.com/80',
+      name: 'Iphone 17 Pro Max',
+      price: 39.99,
+      image: 'https://minhtuanmobile.com/uploads/products/iphone-16-plus-teal-pdp-image-position-1a-teal-color-vn-vi-240910110648.jpg',
     },
     {
       id: '2',
-      name: 'Product 2',
+      name: 'Macbook Air M1',
       price: 29.99,
-      image: 'https://via.placeholder.com/80',
+      image: 'https://product.hstatic.net/200000348419/product/macbook_air_13_inch_m1_2020_gold_0_94de8487ca60405dbf1bfea674d4ae7b_master.png',
     },
     {
       id: '3',
-      name: 'Product 3',
-      price: 39.99,
-      image: 'https://via.placeholder.com/80',
+      name: 'Laptop HP',
+      price: 19.99,
+      image: 'https://e7.pngegg.com/pngimages/376/576/png-clipart-laptop-hewlett-packard-intel-hp-pavilion-gaming-computer-laptop-gadget-electronics-thumbnail.png',
     },
   ]
 
