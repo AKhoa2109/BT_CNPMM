@@ -51,3 +51,13 @@
 - **Nội dung:** Tìm kiếm sản phẩm (ElasticSearch) và lọc với nhiều điều kiện (theo danh mục, theo giá, theo khuyến mãi, theo lượt xem,...)
 - **Lưu ý:** Chạy docker-compose.yml trong EXPRESSJS01.
 ---
+### BaiTap07
+- **Tên:** Bài tập 07  
+- **Ngày:** 10/09/2025  
+- **Folder:**
+```bash
+    BaiTap07/
+        ├── CART-LIBRARY 
+```
+- **Nội dung:** Xây dựng 01 thư viện cho chức năng Giỏ hàng (UI, thêm, sửa, xóa) với việc chuẩn hóa các component (input text, button, modals, cards) cho Giỏ hàng
+---
